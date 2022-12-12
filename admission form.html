@@ -1,17 +1,18 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html><head>
   <title>Admission form| IT students</title>
-
-  
+ <link rel="stylesheet" href="I:\html programs\css">
 </head><body>
-<h1 align="center"><big><u>Admission</u> <u>Form</u></big></h1>
+<h1 class="center heading"><u>Admission</u> <u>Form</u></h1>
+<div class="bgcolor2">
+<br><br>
 
 <form action="I:\html programs\practical 9 action.html"> <label><b>First
-Name:</b><span style="color: rgb(255, 0, 4) ! important;" inline;="" float:="" none;="">*</span> <input name="textfield" id="textfield" type="text"></label> <br>
+Name:</b><span style="color: rgb(255, 0, 4) ! important;" inline;="" float:="" none;="">*</span> <input name="textfield" class="input1" type="text"></label> <br>
   <br>
-  <label for="First name"><b>Last Name:</b><span style="color: rgb(255, 0, 4) ! important;" inline;="" float:="" none;="">*</span></label> <input name="textfield" id="textfield" type="text"> <br>
+  <label for="First name"><b>Last Name:</b><span style="color: rgb(255, 0, 4) ! important;" inline;="" float:="" none;="">*</span></label> <input name="textfield" class="input1" type="text"> <br>
   <br>
-  <label><b>Date of Birth:</b><span style="color: rgb(255, 0, 4) ! important;" inline;="" float:="" none;="">*</span></label> <input name="date" id="date" type="date"><br>
+  <label><b>Date of Birth:</b><span style="color: rgb(255, 0, 4) ! important;" inline;="" float:="" none;="">*</span></label> <input name="date" class="input1 inputsizesmall" type="date"><br>
   <br>
   <b>Gender</b><span style="color: red ! important; display: inline; float: none;">*</span>
   <br>
@@ -19,22 +20,22 @@ Name:</b><span style="color: rgb(255, 0, 4) ! important;" inline;="" float:="" n
   <input name="CheckboxGroup1" value="checkbox" id="CheckboxGroup1_1" type="radio"> Female <br>
   <input name="CheckboxGroup1" value="checkbox" id="CheckboxGroup1_1" type="radio"> Others</label> <br>
   <br>
-  <lable><b>Acadamic Year: </b><span style="color: rgb(255, 0, 4) ! important; display: inline; float: none;" *=""></span></lable> <input max="2022" min="1990" type="number"> <br>
+  <label><b>Acadamic Year: </b><span style="color: rgb(255, 0, 4) ! important; display: inline; float: none;" *=""></span></lable> <input  class="input1 inputsizesmall" max="2022" min="1990" type="number"><br>
   <br>
-  <lable><b>Permanent Address :</b><span style="color: red ! important; display: inline; float: none;">*</span><br>
-  <input size="47" placeholder="Street Address" type="text"> <br>
-  <input placeholder="City" type="text"> <input placeholder="State" type="text"> <br>
-  <input placeholder="Postal / Zip code" type="text"> <input autocomplete="none" data-i18n-placeholder="textdef_29" placeholder="Country" type="text"> </lable> <br>
+  <label><b>Permanent Address :</b><span style="color: red ! important; display: inline; float: none;">*</span><br>
+  <input class="input1 inputsizebig" placeholder="Street Address" type="text"> <br>
+  <input class="input1" placeholder="City" type="text"> <input class="input1" placeholder="State" type="text"> <br>
+  <input class="input1" placeholder="Postal / Zip code" type="text"> <input autocomplete="on" class="input1" placeholder="Country" type="text"> </label> <br>
   <br>
   <lable><b>Applicant's Phone number:</b></lable><b><span style="color: red ! important; display: inline; float: none;">*</span>
-  <input id="phone" name="phone" placeholder="01234 56789" pattern="[0-9]{5} [0-9]{5}" required="" type="tel"> <br>
+  <input class="input1 inputsizesmall" name="phone" placeholder="01234 56789" pattern="[0-9]{5} [0-9]{5}" type="tel"> <br>
   <br>
-  <label>Email: <input placeholder="xyz@abc.com" autocomplete="on" type="email"> </label> <br>
+  <label>Email: <input class="input1 inputsizesmall" placeholder="xyz@abc.com" autocomplete="on" type="email"> </label> <br>
   <br>
   </b><label style="font-weight: bold;" for="country">State:<span style="color: red ! important; display: inline; float: none;">*</span>
 <!-- States of India -->
-  <select>
-  <option disabled="disabled" selected="selected" value="">--Select
+  <select class="input1 inputsizesmall">
+  <option disabled="disabled" selected="selected">--Select
 your state--</option>
   <option value="AP">Andhra Pradesh</option>
   <option value="AR">Arunachal Pradesh</option>
@@ -76,8 +77,8 @@ your state--</option>
   </label> <br>
   <br>
   <label style="font-weight: bold;"> Department: <span style="color: red ! important; display: inline; float: none;">*</span></label>
-  <select name="Department">
-  <option disabled="disabled" selected="selected" value="">--Select
+  <select name="Department" class="input1 inputsizesmall select-selected" style="border:double">
+  <option disabled="disabled" selected="selected" >--Select
 your Department--</option>
   <option value="am">Applied Mechanics</option>
   <option value="ar">Automation and Robotics</option>
@@ -85,7 +86,7 @@ your Department--</option>
   <option value="ce">Civil Engg</option>
   <option value="cme">Computer Engg</option>
   <option value="ee">Electrical Engg</option>
-  <option value="ic">Information &amp; Communication</option>
+  <option value="ic">Information & Communication</option>
   <option value="it">Information Technology</option>
   <option value="m(CAD/CAM)">Mechanical (CAD/CAM)</option>
   <option value="me">Mechanical Engg</option>
@@ -98,6 +99,6 @@ your Department--</option>
   <br>
   <label><b>Upload Applicant's Passport photo:</b></label> <input id="img" name="img" accept="image/*" type="file"> <br>
   <br>
-  <input id="submit" name="submit" type="submit"><input id="reset" name="reset" type="reset"></form>
+  <input class="submit" name="submit" type="submit"><input class="submit" name="reset" type="reset"></form></div>
 
 </body></html>
